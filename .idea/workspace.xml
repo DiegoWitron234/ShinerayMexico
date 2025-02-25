@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0d9b48b-5017-4615-84f2-b3889e33a830" name="Changes" comment="Se modificó el inicio y se creó un nuevo carrusel">
+    <list default="true" id="b0d9b48b-5017-4615-84f2-b3889e33a830" name="Changes" comment="Se arregló el espacio entre el carrusel y los modelos, y se cambiaron algunos textos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/inicio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/servicios.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/servicios.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +117,7 @@
       <option name="presentableId" value="Default" />
       <updated>1740435571302</updated>
       <workItem from="1740435572435" duration="7914000" />
-      <workItem from="1740518236514" duration="4443000" />
+      <workItem from="1740518236514" duration="5659000" />
     </task>
     <task id="LOCAL-00001" summary="Primeros cambios, se copió el diseño de PiaggioGT">
       <option name="closed" value="true" />
@@ -137,15 +135,35 @@
       <option name="project" value="LOCAL" />
       <updated>1740521465254</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Se arregló el espacio entre el carrusel y los modelos, y se cambiaron algunos textos">
+      <option name="closed" value="true" />
+      <created>1740522851204</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740522851204</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primeros cambios, se copió el diseño de PiaggioGT" />
     <MESSAGE value="Se modificó el inicio y se creó un nuevo carrusel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se modificó el inicio y se creó un nuevo carrusel" />
+    <MESSAGE value="Se arregló el espacio entre el carrusel y los modelos, y se cambiaron algunos textos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se arregló el espacio entre el carrusel y los modelos, y se cambiaron algunos textos" />
   </component>
 </project>
