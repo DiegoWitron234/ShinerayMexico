@@ -1,0 +1,43 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Vehículos - Shineray{% endblock %}
+{% block extra_head %}
+  <!-- Estilos exclusivos para la página de Vehículos (opcional) -->
+  <!--<link rel="stylesheet" href="{% static 'main/css/vehiculos.css' %}">-->
+  <!-- AOS CSS para animaciones -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+{% endblock %}
+{% block content %}
+<div class="text-center my-5" data-aos="fade-in">
+    <h1 class="display-4">Vehículos</h1>
+    <p class="lead">Todos nuestros automóviles.</p>
+</div>
+
+<h1>Catálogo de Vehículos</h1>
+<form method="GET">
+    <input type="text" name="q" placeholder="Buscar modelo">
+    <button type="submit">Buscar</button>
+</form>
+<div>
+    {% for vehiculo in vehiculos %}
+        <div>
+            <h2>{{ vehiculo.marca }} {{ vehiculo.modelo }} ({{ vehiculo.año }})</h2>
+            <p>Precio: {{ vehiculo.precio }}</p>
+            <p>{{ vehiculo.descripcion }}</p>
+            {% if vehiculo.imagen %}
+                <img src="{{ vehiculo.imagen.url }}" alt="{{ vehiculo.marca }} {{ vehiculo.modelo }}">
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>
+
+    <!-- AOS JS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800, // Duración de la animación en ms
+    once: true     // Solo anima una vez
+  });
+</script>
+
+{% endblock %}
