@@ -1,18 +1,3 @@
-/* Overlay para el carousel */
-.carousel-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-/* Sombra para textos del carousel */
-.carousel-caption {
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-}
-
 /* Tamaño reducido para imágenes de vehículos */
 .img-small {
   max-width: 300px;
