@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0d9b48b-5017-4615-84f2-b3889e33a830" name="Changes" comment="Primeros cambios, se copió el diseño de PiaggioGT">
-      <change afterPath="$PROJECT_DIR$/main/static/main/images/banner1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/main/images/banner3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/main/images/banner4.jpg" afterDir="false" />
+    <list default="true" id="b0d9b48b-5017-4615-84f2-b3889e33a830" name="Changes" comment="Se modificó el inicio y se creó un nuevo carrusel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShinerayMexico/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ShinerayMexico/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/css/carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/main/css/carousel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/css/inicio.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/main/css/inicio.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/images/banner2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/main/images/banner2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/main/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/main/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/inicio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/servicios.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/servicios.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1740435571302</updated>
       <workItem from="1740435572435" duration="7914000" />
-      <workItem from="1740518236514" duration="3183000" />
+      <workItem from="1740518236514" duration="4443000" />
     </task>
     <task id="LOCAL-00001" summary="Primeros cambios, se copió el diseño de PiaggioGT">
       <option name="closed" value="true" />
@@ -137,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740509250982</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Se modificó el inicio y se creó un nuevo carrusel">
+      <option name="closed" value="true" />
+      <created>1740521465254</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740521465254</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +145,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primeros cambios, se copió el diseño de PiaggioGT" />
-    <option name="LAST_COMMIT_MESSAGE" value="Primeros cambios, se copió el diseño de PiaggioGT" />
+    <MESSAGE value="Se modificó el inicio y se creó un nuevo carrusel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se modificó el inicio y se creó un nuevo carrusel" />
   </component>
 </project>

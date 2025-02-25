@@ -23,19 +23,23 @@
         <button class="next">&#10095;</button>
     </section>
 
+    <div class="container text-center my-5" data-aos="fade-up">
+  <h1 class="display-5">Modelos populares</h1>
+  <p class="lead">Mira nuestros modelos más populares entre nuestros clientes</p>
+</div>
     <!-- Mostrando los dos modelos populares -->
-<div class="container marketing" data-aos="fade-up">
+<div class="container marketing mt-5" data-aos="fade-up">
   <div class="row justify-content-center">
     <div class="col-lg-4 text-center mb-4">
       <img src="{% static 'main/images/apecity.webp' %}" class="img-fluid hover-lift img-small" alt="Ape City">
       <h2 class="fw-normal mt-3">Ape City</h2>
-      <p>Por sus características técnicas, confort, avances tecnológicos, diseño, y sobre todo el respaldo de una gran marca, APE CITY es tu mejor opción para el servicio de Mototaxi.</p>
+      <p>Shineray X1 es nuestro modelo insignia, concebido para brindar una experiencia de conducción premium. Con un diseño aerodinámico, tecnología de punta y un rendimiento excepcional, el Shineray X1 redefine el concepto de movilidad urbana, ofreciendo confort y seguridad en cada viaje.</p>
       <p><a class="btn btn-secondary" href="{% url 'vehiculos' %}">Ver detalles &raquo;</a></p>
     </div>
     <div class="col-lg-4 text-center mb-4">
       <img src="{% static 'main/images/apecitynxt.webp' %}" class="img-fluid hover-lift img-small" alt="Ape City NXT">
       <h2 class="fw-normal mt-3">Ape City NXT</h2>
-      <p>Con la suavidad de manejo, características de Piaggio, tus clientes preferirán esta unidad sobre cualquier otra. Su amplio espacio para pasajeros, harán la diferencia a la hora de elegir este modelo.</p>
+      <p>Shineray X2 Con la suavidad de manejo, características de Piaggio, tus clientes preferirán esta unidad sobre cualquier otra. Su amplio espacio para pasajeros, harán la diferencia a la hora de elegir este modelo.</p>
       <p><a class="btn btn-secondary" href="{% url 'vehiculos' %}">Ver detalles &raquo;</a></p>
     </div>
   </div>
@@ -96,7 +100,7 @@
 <script>
   AOS.init({
     duration: 800,
-    once: true
+    once: false
   });
 </script>
 
