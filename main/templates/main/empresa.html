@@ -12,22 +12,48 @@ Empresa - Shineray
 {% endblock %}
 
 {% block content %}
-<!-- Encabezado -->
-<section class="single-page-header" style="background-image: url('{% static "main/images/fondohistoria.jpg" %}'); background-size: cover;">
-    <div class="container text-center py-5" data-aos="fade-in">
-        <h1 class="display-4 text-black">Empresa</h1>
-        <p class="lead text-black">Conoce nuestra historia, misión, visión y valores como empresa.</p>
+<!-- Imagen Encabezado -->
+<section class="single-page-header">
+    <img src="{% static 'main/images/fondohistoria.jpg' %}" alt="Historia de la Empresa" class="img-fluid w-100">
+</section>
+
+<!-- Texto debajo de la imagen -->
+<section class="empresa-texto py-5">
+    <div class="container text-center" data-aos="fade-in">
+        <h1 class="display-4">Empresa</h1>
+        <p class="lead">Conoce nuestra historia, misión, visión y valores como empresa.</p>
     </div>
 </section>
 
+
 <!-- Historia -->
+<section class="section" id="historia">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6" data-aos="fade-right">
+                <h2 class="text-primary mb-4">Historia</h2>
+                <div id="historia-contenedor" class="historia-contenedor">
+                    <p>
+                        Fundada en 1997, <strong>Shineray Group</strong> es una empresa dedicada a la investigación, desarrollo, producción y venta de automóviles, así como a motocicletas de alta gama, maquinaria agrícola, movilidad inteligente y arrendamiento financiero con sede en Chongqing, China.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+                <img src="{% static 'main/images/oricardohenri-6.jpg' %}" alt="Historia de la empresa" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quiénes Somos -->
 <section class="section" id="quienes-somos" data-aos="fade-up">
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-md-8 text-center">
-                <h2 class="text-primary mb-4">Historia</h2>
+                <img src="{%  static 'main/images/fondohistoria.jpg' %}" alt="Historia de Shineray" style="width: 100%; height: auto;">
+                <h2 class="text-primary mb-4">Quiénes somos</h2>
                 <p>
-                    Fundada en 1997, <strong>Shineray Group</strong> es una empresa dedicada a la investigación, desarrollo, producción y venta de automóviles, así como a motocicletas de alta gama, maquinaria agrícola, movilidad inteligente y arrendamiento financiero con sede en Chongqing, China.
+                    Moto Galería es una empresa fundada el 11 de Agosto de 2006 por un grupo familiar de Chiapas dedicada a la comercialización de moto carros. En el año 2019 se crean lazos con la marca Piaggio y a raíz de esta unión Moto Galería se convierte en importadora y exportadora de moto carros de pasajeros, pick ups y refacciones. Desde entonces, Moto Galería en conjunto con Piaggio se ha expandido a lugares como Colombia, Guatemala, Perú y Estados Unidos.
                 </p>
             </div>
         </div>
@@ -41,7 +67,7 @@ Empresa - Shineray
             <div class="col-md-6">
                 <h2 class="text-primary">Misión</h2>
                 <p class="lead">
-                    Ser una empresa que brinde mejores oportunidades de empleo, autoempleo o de negocio a las personas, a través de nuestros vehículos con el mejor servicio postventa y refacciones.
+                    Ser una empresa que brinde mejores oportunidades de empleo, autoempleo o de negocio a las personas, a través de nuestros mototaxis con el mejor servicio postventa y refacciones.
                 </p>
             </div>
             <div class="col-md-6">

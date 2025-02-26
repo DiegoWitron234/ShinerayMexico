@@ -73,7 +73,7 @@
   }
   
   body {
-    background-image: url('main/static/main/images/Fondo.jpeg');
+    background-image: url('../images/Fondo.jpeg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;

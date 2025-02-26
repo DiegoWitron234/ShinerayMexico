@@ -77,10 +77,23 @@ WSGI_APPLICATION = 'ShinerayMexico.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+'''
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'shineray', # Nombre de la base de datos
+        'USER': 'root',      # Usuario de MySQL
+        'PASSWORD': 'amolavida',  # Contraseña de MySQL
+        'HOST': 'localhost',  # O la dirección IP del servidor MySQL
+        'PORT': '3306',       # Puerto por defecto de MySQL
     }
 }
 

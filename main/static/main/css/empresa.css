@@ -1,6 +1,6 @@
 /* Estilos específicos para la página Empresa */
 
-/* Efecto hover para imágenes de valores */
+/* Ejemplo: efecto hover para imágenes de valores */
 #valores img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
