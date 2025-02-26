@@ -6,8 +6,12 @@ def inicio(request):
     return render(request, 'main/inicio.html')
 
 def vehiculos(request):
-    vehiculos = Vehiculo.objects.all()
-    return render(request, 'main/vehiculos.html', {'vehiculos': vehiculos})
+    query = request.GET.get('q')
+    if query:
+        autos = Vehiculo.objects.filter(modelo__icontains=query)
+    else:
+        autos = Vehiculo.objects.all()
+    return render(request, 'main/vehiculos.html', {'vehiculos': autos})
 
 def empresa(request):
     #Página de empresa
@@ -19,5 +23,16 @@ def servicios(request):
 
 
 def contacto(request):
-    #Página de contacto
+    if request.method == 'POST':
+        nombre = request.POST.get('nombre')
+        email = request.POST.get('email')
+        mensaje = request.POST.get('mensaje')
+        # Aquí podrías usar send_mail o guardar en la BD
+        # send_mail(
+        #     subject=f"Mensaje de {nombre}",
+        #     message=mensaje,
+        #     from_email=email,
+        #     recipient_list=[settings.DEFAULT_FROM_EMAIL],
+        # )
+        return render(request, 'main/contacto.html', {'enviado': True})
     return render(request, 'main/contacto.html')
