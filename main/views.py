@@ -13,6 +13,9 @@ def vehiculos(request):
         autos = Vehiculo.objects.all()
     return render(request, 'main/vehiculos.html', {'vehiculos': autos})
 
+def vehiculo_detalles(request):
+    return render(request, 'main/vehiculo_detalles.html')
+
 def empresa(request):
     #Página de empresa
     return render(request, 'main/empresa.html')
