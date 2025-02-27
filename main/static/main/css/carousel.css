@@ -1,37 +1,35 @@
-/* GLOBAL STYLES
+/* ESTILOS GLOBALES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
+/* Espaciado debajo del pie de página y texto del cuerpo más claro */
 
 body {
   padding-top: 3rem;
-  padding-bottom: 3rem;
   color: rgb(var(--bs-tertiary-color-rgb));
 }
 
-
-/* CUSTOMIZE THE CAROUSEL
+/* PERSONALIZAR EL CARRUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */
+/* Clase base del carrusel */
 .carousel {
   margin-bottom: 4rem;
 }
-/* Since positioning the image, we need to help out the caption */
+/* Debido a la posición de la imagen, necesitamos ajustar el pie de foto */
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
+/* Declarar alturas debido a la posición del elemento img */
 .carousel-item {
   height: 32rem;
 }
 
-/* RESPONSIVE CSS
+/* CSS RESPONSIVO
 -------------------------------------------------- */
 
 @media (min-width: 40em) {
-  /* Bump up size of carousel content */
+  /* Incrementar el tamaño del contenido del carrusel */
   .carousel-caption p {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
