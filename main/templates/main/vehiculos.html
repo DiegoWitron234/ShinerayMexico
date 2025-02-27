@@ -36,7 +36,7 @@
         {% if vehiculo.imagen %}
           <img src="{{ vehiculo.imagen.url }}" class="card-img-top" alt="{{ vehiculo.marca }} {{ vehiculo.modelo }}">
         {% else %}
-          <img src="{% static 'main/images/placeholder.png' %}" class="card-img-top" alt="Sin imagen">
+          <img src="{% static 'main/images/placeholder.svg' %}" class="card-img-top" alt="Sin imagen">
         {% endif %}
         <div class="card-body">
           <h5 class="card-title">{{ vehiculo.marca }} {{ vehiculo.modelo }} ({{ vehiculo.año }})</h5>
@@ -44,8 +44,7 @@
           <p class="card-text">{{ vehiculo.descripcion|truncatewords:20 }}</p>
         </div>
         <div class="card-footer text-center">
-          <a href="#" class="btn btn-secondary">Ver detalles &raquo;</a>
-            <!-- FALTA AGREGAR NUEVA PÁGINA CON DETALLES -->
+          <a href="{% url 'vehiculo_detalles' vehiculo.id %}" class="btn btn-secondary">Ver detalles &raquo;</a>
         </div>
       </div>
     </div>

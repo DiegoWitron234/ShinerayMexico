@@ -1,6 +1,43 @@
 {% extends 'main/base.html' %}
 {% load static %}
-{% block title %}Vehículos - Shineray{% endblock %}
+{% block title %}Detalles del Vehículo{% endblock %}
+{% block extra_head %}
+  <!-- Estilos exclusivos para la página de contacto -->
+  <link rel="stylesheet" href="{% static 'main/css/vehiculo_detalles.css' %}">
+{% endblock %}
 {% block content %}
 
+<!-- Encabezado visual -->
+<section class="vehiculo-header" data-aos="fade-down">
+  <div class="container">
+    <h1>Detalles del Vehículo</h1>
+    <p class="lead">{{ vehiculo.marca }} {{ vehiculo.modelo }}</p>
+  </div>
+</section>
+
+<!-- Contenido del detalle -->
+<div class="container vehiculo-info" data-aos="fade-up">
+  <div class="row">
+    <!-- Imagen del vehículo -->
+    <div class="col-md-6 mb-4">
+      {% if vehiculo.imagen %}
+      <img src="{{ vehiculo.imagen.url }}" alt="{{ vehiculo.marca }} {{ vehiculo.modelo }}" class="img-fluid rounded shadow">
+      {% else %}
+      <img src="{% static 'main/images/placeholder.svg' %}" alt="Sin imagen" class="img-fluid rounded shadow">
+      {% endif %}
+    </div>
+    <!-- Información del vehículo -->
+    <div class="col-md-6">
+      <h2>{{ vehiculo.marca }} {{ vehiculo.modelo }}</h2>
+      <p class="mb-2"><strong>Año:</strong> {{ vehiculo.año }}</p>
+      <p class="mb-2"><strong>Precio:</strong> {{ vehiculo.precio }}</p>
+      <hr>
+      <p>{{ vehiculo.descripcion }}</p>
+      <!-- Puedes agregar más detalles según tu modelo -->
+      <a href="{% url 'vehiculos' %}" class="btn btn-primary btn-volver">
+        &laquo; Volver al catálogo
+      </a>
+    </div>
+  </div>
+</div>
 {% endblock %}

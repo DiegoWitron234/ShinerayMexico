@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Vehiculo
 
 def inicio(request):
@@ -13,9 +13,10 @@ def vehiculos(request):
         autos = Vehiculo.objects.all()
     return render(request, 'main/vehiculos.html', {'vehiculos': autos})
 
-def vehiculo_detalles(request):
-    query = request.GET.get('q')
-    return render(request, 'main/vehiculo_detalles.html')
+def vehiculo_detalles(request, id):
+    vehiculo = get_object_or_404(Vehiculo, id=id)
+    context = {'vehiculo': vehiculo}
+    return render(request, 'main/vehiculo_detalles.html', context)
 
 def empresa(request):
     #Página de empresa
