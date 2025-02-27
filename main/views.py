@@ -14,6 +14,7 @@ def vehiculos(request):
     return render(request, 'main/vehiculos.html', {'vehiculos': autos})
 
 def vehiculo_detalles(request):
+    query = request.GET.get('q')
     return render(request, 'main/vehiculo_detalles.html')
 
 def empresa(request):
