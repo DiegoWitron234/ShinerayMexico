@@ -1,0 +1,85 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Contenedor principal que ocupa toda la ventana */
+html, body {
+  height: 100%;
+}
+
+/* Asegúrate de que el contenedor .container-404
+   y su contenido estén centrados si lo deseas */
+.container-404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px); /* Ajusta para compensar la altura del navbar */
+  background: #f7f7f7;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Contenedor del contenido de error */
+.error-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Contenedor del auto y cactus */
+.car-road {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  margin: 0 auto 20px auto;
+}
+
+/* Imagen del auto */
+.car {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  animation: drive 3s ease-in-out infinite alternate;
+}
+
+
+/* Animación del auto */
+@keyframes drive {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(180px);
+  }
+}
+
+/* Título principal */
+.error-title {
+  font-size: 4rem;
+  color: #333;
+  margin: 20px 0;
+}
+
+/* Mensaje de error */
+.error-message {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Instrucciones para volver a inicio */
+.error-instructions {
+  font-size: 1rem;
+  color: #333;
+}
+.error-instructions a {
+  color: #0066cc;
+  text-decoration: none;
+}
+.error-instructions a:hover {
+  text-decoration: underline;
+}

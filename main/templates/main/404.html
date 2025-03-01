@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Página no encontrada</title>
+  <!-- Enlaza tu hoja de estilos -->
+  <link rel="stylesheet" href="404.css">
+      <link rel="stylesheet" href="{% static 'main/css/contacto.css' %}">
 </head>
 <body>
+  <div class="container-404">
+    <!-- Contenedor principal del mensaje -->
+    <div class="error-content">
+      <div class="car-road">
+        <!-- Imagen del auto -->
+        <img src="{% static 'main/images/carro4040.png' %}" alt="Auto perdido" class="car">
+        <!-- Opcional: cactus para dar ambiente desértico -->
 
+      </div>
+      <!-- Título principal (el número 404 o el texto de error) -->
+      <h1 class="error-title">404</h1>
+      <p class="error-message">
+        Lo sentimos, parece que el GPS nos ha llevado por el camino equivocado.
+        <br>¡Recalculando!
+      </p>
+      <p class="error-instructions">
+        Dirígete a la <a href="/">página de inicio</a> para configurar el coche perfecto para ti.
+      </p>
+    </div>
+  </div>
+
+  <!-- JavaScript para animación (opcional) -->
+  <script src="404.js"></script>
 </body>
 </html>

@@ -1,81 +1,133 @@
-/* contacto.css - Estilos exclusivos para la página de Contacto Corporativo */
+/* FONDO Y ESTILOS GENERALES */
+body {
+  background: #1d1d1d; /* Fondo oscuro */
+  color: #fff;         /* Texto blanco */
+}
 
-/* Encabezado de la página de contacto */
-.contacto-header {
-    background: linear-gradient(135deg, #0564a4, #1d4f73);
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
-  }
-  
-  .contacto-header h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .contacto-header p {
-    font-size: 1.2rem;
-    opacity: 0.9;
-  }
-  
-  /* Información de contacto */
-  .contacto-info {
-    background-color: #f8f9fa;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    margin-bottom: 30px;
-  }
-  
-  .contacto-info h3 {
-    color: #0564a4;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-  }
-  
-  .contacto-info p {
-    font-size: 1rem;
-    margin-bottom: 5px;
-  }
-  
-  /* Formulario de contacto */
-  .contacto-form {
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  }
-  
-  .contacto-form label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
-  }
-  
-  .contacto-form .form-control {
-    border-radius: 4px;
-    border: 1px solid #ced4da;
-  }
-  
-  .contacto-form button {
-    background-color: #0564a4;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contacto-form button:hover {
-    background-color: #034f7a;
-  }
-  
-  body {
-    background-image: url('../images/Fondo.jpeg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+/* CONTENEDOR PRINCIPAL */
+.contact-page {
+  min-height: calc(100vh - 70px); /* Ajuste si tienes un navbar fijo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* CONTENEDOR DEL CONTACTO */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;     /* Para que en pantallas pequeñas se ajuste */
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* COLUMNA IZQUIERDA: INFORMACIÓN */
+.contact-info {
+  flex: 1;
+  min-width: 280px;    /* Asegura que no colapse en pantallas muy pequeñas */
+  margin-right: 40px;
+}
+
+/* TITULO */
+.contact-info h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+/* TEXTO */
+.contact-info p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+/* SECCIÓN DE REDES SOCIALES */
+/***************
+   Sección de redes sociales
+   (renombrada para evitar conflictos)
+***************/
+.contact-networks {
+  margin-top: 1rem;
+}
+
+.contact-networks p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #fff; /* Ajusta según tu fondo */
+}
+
+/* Sección de redes sociales */
+
+/* Ajusta la separación entre iconos */
+.contact-networks-icons {
+  display: flex;
+  gap: 2rem; /* Incrementa este valor para mayor separación (antes 1rem) */
+}
+
+/* Ajusta el tamaño y el padding de los íconos */
+.contact-networks-icon img {
+  width: 32px;  /* Más grande que los 24px anteriores */
+  height: 32px;
+  background: #333; /* Fondo gris */
+  padding: 10px;    /* Un poco más de espacio interno (antes 8px) */
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-networks-icon img:hover {
+  background: #555;
+}
+
+
+
+/* COLUMNA DERECHA: FORMULARIO */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  margin-top: 1rem;  /* Espacio en pantallas pequeñas */
+}
+
+/* FORMULARIO */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+.contact-form label span {
+  color: #e74c3c; /* Color para el asterisco */
+}
+.contact-form input,
+.contact-form textarea {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1rem;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #666;
+}
+.contact-form button.contact-button {
+  align-self: flex-start;
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.contact-form button.contact-button:hover {
+  background: #c0392b;
+}
