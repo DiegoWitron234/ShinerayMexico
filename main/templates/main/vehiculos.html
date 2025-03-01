@@ -34,12 +34,12 @@
     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="{{ forloop.counter0|add:'100' }}">
       <div class="card h-100 shadow-sm">
         {% if vehiculo.imagen %}
-          <img src="{{ vehiculo.imagen.url }}" class="card-img-top" alt="{{ vehiculo.marca }} {{ vehiculo.modelo }}">
+          <img src="{{ vehiculo.imagen.url }}" class="card-img-top" alt="{{ vehiculo.tipo }} {{ vehiculo.modelo }}">
         {% else %}
           <img src="{% static 'main/images/placeholder.svg' %}" class="card-img-top" alt="Sin imagen">
         {% endif %}
         <div class="card-body">
-          <h5 class="card-title">{{ vehiculo.marca }} {{ vehiculo.modelo }} ({{ vehiculo.año }})</h5>
+          <h5 class="card-title">{{ vehiculo.tipo }} {{ vehiculo.modelo }}</h5>
           <p class="card-text"><strong>Precio:</strong> {{ vehiculo.precio }}</p>
           <p class="card-text">{{ vehiculo.descripcion|truncatewords:20 }}</p>
         </div>

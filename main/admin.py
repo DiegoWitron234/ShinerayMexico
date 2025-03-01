@@ -4,6 +4,7 @@ from .models import Vehiculo
 
 @admin.register(Vehiculo)
 class VehiculoAdmin(admin.ModelAdmin):
-    list_display = ('marca', 'modelo', 'año', 'precio')
-    search_fields = ('marca', 'modelo')
-    list_filter = ('marca', 'año')
+    list_display = ('tipo', 'modelo', 'precio')
+    search_fields = ('tipo', 'modelo')
+    list_filter = ('tipo',)
+
